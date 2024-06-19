@@ -265,7 +265,7 @@ function Header({ isHiddenItemHeader = false }) {
                     )}
                   </>
                 ) : (
-                  <a href="/sign-in">ĐĂNG NHẬP/ĐĂNG KÍ</a>
+                  <a onClick={() => navigate("/sign-in")}>ĐĂNG NHẬP/ĐĂNG KÍ</a>
                 )}
               </Popover>
             </Loading>
@@ -273,7 +273,7 @@ function Header({ isHiddenItemHeader = false }) {
 
           {!isHiddenItemHeader && (
             <div className="header__inner__right--cart">
-              <a href="/order">
+              <a onClick={() => navigate("/order")}>
                 <span>
                   GIỎ HÀNG
                   <Badge count={orderProducts?.orderItems?.length} offset={[5, -6]}>
@@ -308,7 +308,7 @@ function Header({ isHiddenItemHeader = false }) {
               return (
                 <div key={index}>
                 <a
-                  href={item.href}
+                  onClick={() => navigate(item.href)}
                   style={index === currentMenu ? { color: "#f57e20" } : {}}
                 >
                   {item.title}
