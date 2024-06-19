@@ -1,0 +1,36 @@
+
+.profile__item{
+    width: 95%;
+    width: 360px;
+    // height: 52px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    margin: 0 auto;
+
+    i{  
+        font-size: 17px;
+        margin-left: 18px;
+    }
+
+    input{
+        border: none;
+        background: none;
+        padding: 13px 0;
+        font-size: 18px;
+        margin-left: 10px;
+        width: 75%;
+        &::placeholder{
+            font-size: 18px;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+.profile__title{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}

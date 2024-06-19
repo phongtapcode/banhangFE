@@ -1,0 +1,101 @@
+.productall {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+
+  @media (max-width: 800px) {
+    width: 100%;
+}
+  &__title {
+    color: #242424;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    text-transform: uppercase;
+    @media (max-width: 800px) {
+      font-size: 15px;
+  }
+
+    i{
+      font-size: 15px;
+    }
+  }
+
+  &__filter {
+    width: 30%;
+    height: 100%;
+
+    @media (max-width: 800px) {
+      width: 350px;
+  }
+
+    &__item{
+        width: 90%;
+        margin: 0 auto;
+
+        h1{
+            font-size: 20px;
+        }
+
+        &--result{
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                padding: 0 20px;
+                font-size: 13px;
+                border: 1px solid black;
+                border-radius: 8cm;
+            }
+        }
+    }
+    &--button{
+        width: 50%;
+        height: 30px;
+        background-color: #f57e20;
+        display: inline-block;
+        background-color: #f57e20;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 25px;
+        margin-top: 10px;
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          color: black;
+          transform: translateY(-5px);
+        }
+
+        &:active {
+          background-color: #f57c20a2;
+        }
+    }
+  }
+
+  &__main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: row;
+  
+    @media (max-width: 800px) {
+      width: 100%;
+      flex-direction: column;
+  }
+  }
+
+  &__header{
+    margin-left: 20px;
+  }
+}

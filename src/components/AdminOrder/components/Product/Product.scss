@@ -1,0 +1,20 @@
+.productitem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.377);
+
+    &__left{
+        width: 100px;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}

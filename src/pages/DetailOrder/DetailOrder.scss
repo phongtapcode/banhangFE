@@ -1,0 +1,95 @@
+.orderdetail{
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+
+    &__inforship{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 10px;
+        margin-bottom: 40px;
+
+        &__address{
+            width: 30%;
+            .title{
+                font-size: 1.5rem;
+            }
+            
+            &--infor{
+                height: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                
+                span{
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &__ship{
+            width: 30%;
+
+            .title{
+                font-size: 1.5rem;
+            }
+
+            &--infor{
+                height: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+
+                span{
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &__payment{
+            width: 30%;
+
+            .title{
+                font-size: 1.5rem;
+            }
+
+            &--infor{
+                height: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                
+                span{
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &__totalprice{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 50px;
+
+        span{
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+    }
+}

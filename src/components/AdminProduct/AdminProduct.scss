@@ -1,0 +1,39 @@
+.ant-table-tbody{
+    .ant-table-cell{
+        text-align: center;
+    }
+}
+
+.ant-table-thead{
+    .ant-table-cell{
+        background-color: black;
+    }
+}
+
+.modal__item{
+    margin-bottom: 13px;
+    label{
+        width: 110px;
+    }
+
+    input[type="text"]{
+        width: 60%;
+        height: 35px;
+        border-radius: 15px;
+        padding-left: 10px;
+    }
+}
+
+.imgproduct{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    img{
+        width: 100%;
+    }
+}
+
+.selecttype{
+    width: 60%;
+}

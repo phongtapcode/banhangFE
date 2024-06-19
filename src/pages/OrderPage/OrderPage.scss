@@ -1,0 +1,247 @@
+.orderproduct {
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: 750px) {
+    margin-top: 10px;
+    width: 100%;
+}
+
+  .icon__hidden{
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    top: -15px;
+    background-color: white;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+
+
+  &__listproduct {
+    width: 100%;
+    &__changeamount {
+      margin-bottom: 20px;
+      width: 108px;
+      height: 34px;
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 170px;
+      border: 1px solid rgba(158, 146, 146, 0.61);
+      
+      button {
+        font-size: 15px;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 170px;
+        background-color: rgba(192, 192, 192, 0.658);
+        &:active {
+          background-color: rgba(0, 0, 0, 0.404);
+        }
+      }
+      span {
+        padding: 11px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__payment {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    &__selectlistroder {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (max-width: 750px) {
+        width: 95%;
+        flex-direction: column;
+        justify-content: center;
+    }
+      &--left {
+        width: 50%;
+
+        @media (max-width: 750px) {
+          width: 100%;
+          text-align: center;
+      }
+
+        .deleteselected {
+          font-size: 1.6rem;
+          &:hover {
+            color: #f57e20;
+            cursor: pointer;
+          }
+        }
+        .selected {
+          font-size: 1.6rem;
+          margin-right: 20px;
+        }
+      }
+
+      &--right {
+        width: 50%;
+
+        @media (max-width: 750px) {
+          width: 100%;
+          text-align: center;
+      }
+        .userinfor {
+          font-size: 1.6rem;
+          i {
+            text-decoration: underline;
+          }
+          span {
+            color: #f57e20;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__voucher {
+      width: 90%;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+      cursor: pointer;
+      span {
+        font-size: 1.6rem;
+        i {
+          color: #f57c20a2;
+          padding: 15px 0;
+          font-size: 1.6rem;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &__preparebill {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      @media (max-width: 750px) {
+        width: 100%;
+        flex-direction: column;
+    }
+      &__calculate {
+        width: 50%;
+        @media (max-width: 750px) {
+          width: 100%;
+      }
+        &--item {
+          display: flex;
+          justify-content: space-between;
+
+          .title {
+            font-size: 1.8rem;
+            color: gray;
+            font-weight: 400;
+          }
+
+          .price {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: rgb(54, 52, 52);
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &__totalprice {
+        width: 50%;
+
+        @media (max-width: 750px) {
+          width: 100%;
+      }
+        &--price {
+          display: flex;
+          justify-content: space-between;
+
+          .title {
+            font-size: 1.8rem;
+            color: gray;
+            font-weight: 400;
+          }
+
+          .price {
+            font-size: 2rem;
+            font-weight: 650;
+            color: red;
+          }
+        }
+
+        &--buttonpay {
+          padding: 8px 0;
+          width: 80%;
+          text-align: center;
+          background-color: #f57e20;
+          display: inline-block;
+          border-radius: 10px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: white;
+          cursor: pointer;
+          margin: 0 auto;
+          margin-top: 20px;
+          transition: all 0.3s ease;
+
+          @media (max-width: 750px) {
+            width: 100px;
+        }
+          i {
+            margin-right: 6px;
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: black;
+            transform: translateY(-5px);
+          }
+
+          &:active {
+            background-color: #f57c20a2;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-table-wrapper {
+  .ant-table-thead {
+    tr {
+      th {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.inforship__item {
+  font-size: 1.9rem;
+}

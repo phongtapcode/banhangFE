@@ -1,0 +1,24 @@
+.order{
+
+    &__address{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        span{
+            font-size: 1.4rem;
+        
+        
+        }
+    }
+
+    &__payment{
+        font-size: 1.5rem;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.selectstate{
+    width: 200px;
+}

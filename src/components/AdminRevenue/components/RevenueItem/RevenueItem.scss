@@ -1,0 +1,31 @@
+.revenueitem{
+    width: 22%;
+    height: 130px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    &__icon{
+        width: 50px;
+        background-color: azure;
+        text-align: center;
+        padding: 9px 0;
+        border-radius: 50%;
+        i{
+            font-size: 28px;
+        }
+    }
+
+    &__title{
+        font-size: 15px;
+    }
+
+    &__value{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
