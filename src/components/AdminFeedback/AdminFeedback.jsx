@@ -275,7 +275,6 @@ function AdminFeedback() {
           },
         }
       );
-    //   setIsModalOpenDetail(false);
   };
 
   const handleOk = () => {

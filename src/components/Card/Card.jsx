@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import { Tooltip } from "antd";
 import "./Card.scss";
+import { useNavigate } from "react-router-dom";
 
 function stringToNumber(str) {
   var num = parseInt(str);
@@ -12,6 +12,7 @@ function numberToString(num) {
 }
 
 function Card({ dataProduct }) {
+  const navigate = useNavigate();
  
   return (
     <div className="cardproduct">
@@ -71,7 +72,7 @@ function Card({ dataProduct }) {
       </div>
 
       <button className="cardproduct__buttonbuy">
-        <a href={`/detail/${dataProduct._id}`}>MUA NGAY</a>
+        <a onClick={() => navigate(`/detail/${dataProduct._id}`)}>MUA NGAY</a>
       </button>
     </div>
   );

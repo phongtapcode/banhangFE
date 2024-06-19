@@ -172,7 +172,7 @@ function PaymentPage() {
               <span>{inforShip.address}</span>
             </div>
             <div className="orderproduct__main__inforship__changeinfor">
-              <a href="/profile">Thay đổi</a>
+              <a onClick={() => navigate("/profile")}>Thay đổi</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,9 @@
 import './ItemCategory.scss';
+import { useNavigate } from "react-router-dom";
 
 function ItemCategory({ data }) {
+  const navigate = useNavigate();
+
   return (
     <div className="itemcategory">
       <div className="itemcategory__left">
@@ -13,7 +16,7 @@ function ItemCategory({ data }) {
       )}
       {data.iconChevron && (
         <ul className="itemcategory__treemenu">
-        {data.children.map((item,index)=>(<li key={index}><a href={item.href}>{item.name}</a></li>))}
+        {data.children.map((item,index)=>(<li key={index}><a onClick={() => navigate(item.href)}>{item.name}</a></li>))}
         </ul>
       )}
     </div>

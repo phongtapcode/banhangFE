@@ -1,7 +1,7 @@
 import "./Header.scss";
 import { Badge, Avatar,Popover, Drawer } from "antd";
 import ItemCategory from "./components/ItemCategory/ItemCategory";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { resetUser,valueSearch } from "../../redux/action";
 import { useNavigate } from "react-router-dom";
@@ -123,10 +123,6 @@ function Header({ isHiddenItemHeader = false }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const onSearch = (value) => {
-    dispatch(valueSearch(value));
-  }
-
   const handleClickTitleCategory = () => {
     setHiddenCategory(!hiddenCategory);
   };
@@ -190,13 +186,13 @@ function Header({ isHiddenItemHeader = false }) {
         <div className="header__top">
           <ul className="header__top__check">
             <li>
-              <a href="/">Tìm kiếm</a>
+              <a onClick={() => navigate("/")}>Tìm kiếm</a>
             </li>
             <li>
-              <a href="/my-order">Kiểm tra đơn hàng</a>
+              <a onClick={() => navigate("/my-order")}>Kiểm tra đơn hàng</a>
             </li>
             <li>
-              <a href="/contact">Liên hệ</a>
+              <a onClick={() => navigate("/contact")}>Liên hệ</a>
             </li>
           </ul>
         </div>
@@ -211,7 +207,7 @@ function Header({ isHiddenItemHeader = false }) {
         key="left"
       >
           <div className="drawer__cart">
-              <a href="/order">
+              <a onClick={() => navigate("/order")}>
                 <span>
                   GIỎ HÀNG
                   <Badge count={orderProducts?.orderItems?.length} offset={[5, -6]}>

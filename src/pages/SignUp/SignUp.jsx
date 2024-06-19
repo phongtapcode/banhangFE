@@ -140,7 +140,7 @@ function SignUp() {
           Tạo tài khoản
         </Button>
       </Loading>
-      <a href="/sign-in">Đã có tài khoản</a>
+      <a onClick={() => navigate("/sign-in")}>Đã có tài khoản</a>
     </Form>
   );
 }

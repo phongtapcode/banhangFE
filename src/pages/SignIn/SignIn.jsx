@@ -146,7 +146,7 @@ function SignIn() {
         >
           Remember me
         </Checkbox>
-        <a className="forgetpassword" href="/forget-password">Quên mật khẩu</a>
+        <a className="forgetpassword" onClick={() => navigate("/forget-password")}>Quên mật khẩu</a>
       </Form.Item>
 
       <Loading isLoading={isPending}>
@@ -162,7 +162,7 @@ function SignIn() {
           Đăng nhập
         </Button>
       </Loading>
-      <a href="/sign-up">Bạn chưa có tài khoản</a>
+      <a onClick={() => navigate("/sign-up")}>Bạn chưa có tài khoản</a>
     </Form>
   );
 }

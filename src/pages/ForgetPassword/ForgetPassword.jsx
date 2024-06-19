@@ -82,7 +82,7 @@ function ForgetPassword() {
           Gửi đến email
         </Button>
       </Loading>
-      <a href="/sign-in">Quay lại</a>
+      <a onClick={() => navigate("/sign-in")}>Quay lại</a>
     </Form>
   );
 }

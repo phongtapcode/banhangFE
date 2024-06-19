@@ -178,7 +178,7 @@ function ProductDetail() {
             <div className="productdetail__infor__countproduct">
               <div className="productdetail__infor__countproduct--location">
                 Giao đến <p>{user?.address}</p>-
-                <a href="/profile">Đổi địa chỉ</a>
+                <a onClick={() => navigate("/profile")}>Đổi địa chỉ</a>
               </div>
 
               <div className="productdetail__infor__countproduct--buttonadd">
